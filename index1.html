@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marg ERP</title>
+  <style>
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 20px;          
+  overflow-y: auto;        
+  width: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .content {
+      height: 500px; 
+      padding: 20px;
+    }
+    #logo_img{
+   margin: 10px 50px;
+   padding-left: 50px;
+   
+  }
+  #bar1{
+   display:inline-block;
+   float: right;
+   margin-right: 20%;
+
+
+  }
+  a{
+   text-decoration: none;
+  }
+  #fontt{
+   font-size: 14px;
+   margin-left: 20px;
+  }
+ 
+  
+  #head{
+   padding: 10%;
+   font-size: 60px;
+
+  }
+ #below_head{
+  margin:-100px;
+  margin-bottom: -300px;
+
+  }
+  #number1{
+   float: right;
+   padding: 5%;
+  }
+  .img1{
+   height: 70px;
+   width:70px;
+   padding: 0 15px 0 0;
+   margin: 0 10px 0 0;
+   border: 1px;
+   border-style:4px;
+
+  }
+  .img23{
+   height: 150px;
+   width: 150px;
+   float: right;
+  
+
+  }
+  #img2{
+   margin: 0 5%;
+   margin-top:-200px;
+   border-radius: 50;
+  }
+  .second_line{
+   font-weight: bold;
+      color: #2d2d5a; 
+      text-decoration: none;
+  }
+  .second_line::after {
+      content: " \25BE"; 
+      font-size: 0.8em;
+      margin-left: 2px;
+    }
+    .second_line:hover{
+     color: aqua;
+    }
+    .img_topright{
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     border: 0.5px solid black;
+     display: flex;
+     float: right;
+     margin-top: -150px;
+     margin-left: -10px;
+     padding: 5px;
+    }
+    .img_topright+img{
+     flex-direction: column;
+     margin-right: 10px;
+     padding: 3px;
+    }
+    #index2{
+     width: 100%;
+     height: 1650px;
+     border: none;
+  overflow: hidden;   
+  scrollbar-width: none;
+    }
+    #index2::-webkit-scrollbar {
+  display: none;   
+  overflow: hidden;      
+}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .heading {
+      text-align: center;
+      margin-top: -250px;
+      margin-left: 700px;
+    }
+
+    .heading h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .heading h2 {
+      margin: 5px 0 30px;
+      font-size: 24px;
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+      margin-left: 700px;
+    }
+
+    .circle-icon {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-icon img {
+      width: 60%;
+      height: auto;
+    }
+    .btn{
+       text-align: center;
+      margin-top:30px;
+      margin-left: 700px;
+    
+
+    }
+    .btn{
+
+  background-color: #009688; 
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color .5s ease;
+
+    }
+.btn:hover {
+  background-color: red; 
+}
+ .color-changing-text {
+    
+      animation: colorChange 3s infinite;
+    }
+
+    @keyframes colorChange {
+      0%   { color: red; }
+      25%  { color: lightgreen }
+      50%  { color: green; }
+      50%  { color: blue; }
+      100% { color: red; }
+    }
+    .background_one:hover{
+      background-color: aqua;
+      color: white;
+      
+      height: 2px;
+      width: 4px;
+      border: 1px solid black;
+      line-height: 10px;
+      cursor: grab;
+    }
+    .background_two:hover{
+      color: aqua;
+      cursor: grab;
+
+    }
+
+
+    /* ========== Media Queries ========== */
+
+/* For tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #bar1 {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  .icon-row {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .heading {
+    margin-left: 0;
+    text-align: center;
+    margin-top: -150px;
+  }
+
+  .btn {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .btn:nth-child(2) {
+    float: none;
+    margin-top: 10px;
+  }
+
+  #head {
+    padding: 5%;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #img2,
+  .img23 {
+    float: none;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+/* For mobile phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .img1,
+  .img_topright {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .circle-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-icon img {
+    width: 50%;
+  }
+
+  .heading h1 {
+    font-size: 24px;
+  }
+
+  .heading h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #fontt,
+  #fontt2 {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #head {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  iframe#index2 {
+    height: 1200px;
+  }
+}
+
+
+   
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+   
+    <img src="https://static.margcompusoft.com/accets/images/marg-logo.png" alt="Logo" style="height:40px;">
+   <div id="bar1">
+   <span id="fontt">
+ <a href="">27x7 support</a>
+ <a href="" style="color: aqua;">Join Training</a>
+ <a href="">Downloads</a>
+ <a href="">Prices</a>
+ <a href="">Become a Partner</a>
+ <a href="">Career</a>
+ <a href="" style="color: aqua;">Video Tutorial</a>
+ <a href="" style="color: aqua;">Payment</a>
+ <a href="">Integration</a><br><br>
+ </span>
+ <span id="fontt2">
+ <a href="" class="color-changing-text">Marg CA community</a>
+ <a href="" class="background_two">Marg cloud</a>
+ <a href="">
+ <label for="sofft" class="second_line" class="background_one">softwares</label>
+  </a>
+  <label for="other_products" class="second_line" class="background_one">Other products</label>
+ <a>
+   <label for="Courses" class="second_line" class="background_one">Courses</label>
+ </a>
+ 
+   <a href="">
+   <label for="Login" class="second_line" class="background_one">Login</label>
+ </a>
+ <a href="">
+   <label for="Contact"class="second_line" class="background_two">Contact us</label>
+ </a>
+ </span>
+ </div>
+</div>
+  </div>
+   <div id="content_left">
+  <div class="content">
+    <div>
+ <h1 id="head">
+  <a href="">
+  Marg ERP 9 <sup>+</sup><br>
+  <span style="font-size:medium">
+ <p style="font-size: 30px; font-style:oblique; margin-left:40px;">GST Billing to Filing</p>
+<p style="margin: -2%; padding-bottom:30px ;">1 Million+ Satisfied users / 850+ Sales & Support Centers</p>
+<div id="image_left">
+ &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://margcompusoft.com/images/awards/home_cmmi_i.png" alt="" class="img1">
+
+
+<img src="https://margcompusoft.com/images/awards/home_iso_i.png" alt="" class="img1">
+
+ <img src="https://margcompusoft.com/images/awards/home_gdpr_i.png " alt="" class="img1">
+
+</div>
+<div class="heading">
+    <h1 style="color:aqua;">India's No. 1</h1>
+    <h2 style="color: aqua;">Inventory & Accounting Software</h2>
+  </div>
+
+  <div class="icon-row">
+    <div class="circle-icon">
+      <img src="https://margcompusoft.com/image/icon-1.png" alt="Store Icon">
+    </div>
+    <div class="circle-icon">
+      <img src="https://margcompusoft.com/image/icon-2.png" alt="Truck Icon">
+    </div>
+    <div class="circle-icon">
+      <img src="https://margcompusoft.com/image/icon-3.png" alt="Factory Icon">
+      
+    </div>
+  </div>
+
+<div>  <input type="submit" value="Request For Demo" class="btn">
+      <input type="submit" value="Download Now" class="btn" style="float: right; margin-top:-50px;"></div>
+</div>
+  </span>
+  </a>
+ </h1>
+ </div>
+
+ 
+<iframe src="index2.html" id="index2" height="2000px" width="100%"></iframe>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+  }
+ footer {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer-column h4 {
+  color: #4c4c85;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.social-links li i {
+  margin-right: 6px;
+  color: #4c4c85;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  background-color: #017c82;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: underline;
+}
+a{
+  text-decoration: none;
+  padding: 9px;
+}
+#above_footer{
+  padding: 4px;
+  margin-left:70px ;
+  }
+  .bottom_image{
+  height: 100px;
+  width: 100px;
+  margin-left: 100px;
+  padding: 10px;
+  border-bottom: #000;
+}
+#bottom_image{
+  padding-left: 200px;
+  border-bottom: #000;
+  
+}
+.footer_one{
+  text-decoration: none;
+  color: #000;
+  font-size: small;
+}
+
+/* ==================== Responsive Footer Media Queries ==================== */
+
+/* For tablets and below (≤ 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom_image {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+
+  #bottom_image {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #above_footer {
+    margin-left: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer_one {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* For mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column ul {
+    padding-left: 0;
+  }
+
+  .bottom_image {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+  }
+
+  #above_footer {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer_one {
+    font-size: 12px;
+    padding: 3px 4px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+  }
+
+  .footer-column ul li {
+    font-size: 13px;
+  }
+
+  .social-links li i {
+    font-size: 16px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>Contact Us</li>
+        <li>Partnership</li>
+        <li>Academy</li>
+        <li>Payroll Software</li>
+        <li>Retail </li>
+        <li>Distribution</li>
+        <li>Manufacturing</li>
+       
+   
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>General Features</h4>
+      <ul>
+        <li>Integration</li>
+        <li>Key Features</li>
+        <li>Rate Management</li>
+        <li>Discount System</li>
+            </ul>
+  </div>
+
+    <div class="footer-column">
+      <h4>GST Link</h4>
+      <ul>
+        <li>GST Software</li>
+        <li>GST Billing Software</li>
+        <li>HSN/SAC Finder</li>
+        <li>e-Way Bill</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Social Links</h4>
+      <ul class="social-links">
+        <li><i class="fab fa-facebook"></i> Facebook</li>
+        <li><i class="fab fa-twitter"></i> Twitter</li>
+        <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+        <li><i class="fab fa-youtube"></i> YouTube</li>
+        <li><i class="fab fa-instagram"></i> Instagram</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Video Playlist & Channel</h4>
+      <ul>
+        <li>Marg ERP – the business booster</li>
+        <li>MargMart – revolutionary marketplace</li>
+        <li>Advertise with Marg</li>
+      </ul>
+    </div>
+  </div>
+   <div id="bottom_image" >
+     <a href=""><img src="https://margcompusoft.com/images/awards/awd1.png" alt="" class="bottom_image"></a>
+    <a href=""><img src="https://margcompusoft.com/images/awards/awd2.png" alt="" class="bottom_image"></a>
+    <a href=""><img src="https://margcompusoft.com/images/awards/awd3.png" alt="" class="bottom_image"></a>
+    <a href=""><img src="https://margcompusoft.com/images/awards/awd4.png" alt="" class="bottom_image"></a>
+  </div>
+</section>
+  <hr>
+  <div id="above_footer">
+    <a href="" class="footer_one">Join Webinar</a>
+    <a href="" class="footer_one">Integration</a>
+    <a href="" class="footer_one">FAQ'S</a>
+    <a href="" class="footer_one">Testimonials</a>
+    <a href="" class="footer_one">Rate us</a>
+    <a href="" class="footer_one">Alliances</a>
+    <a href="" class="footer_one">Terms & Conditions</a>
+    <a href="" class="footer_one">IPR & redressal policy</a>
+    <a href="" class="footer_one">Refund and cancellation policy</a>
+    <a href="" class="footer_one">Privacy policy </a>
+    <a href="" class="footer_one">site-map</a>
+    <a href="" class="footer_one">Unsubscribe</a>
+  </div>
+  <section >
+ 
+
+  <div class="footer-bottom">
+    <p>©1992–2025 <a href="#">Marg ERP Limited</a> | Missed Call: +91 9999999364 | Support: <a href="mailto:support@margerp.com">support@margerp.com</a></p>
+  </div>
+</footer>
+ 
+</body>
+</html>

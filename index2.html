@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marg ERP Clone</title>
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  color: #007e8a;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h2 {
+  font-size: 1.5rem;
+  color: #00a88e;
+}
+
+.stat-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.services .highlight {
+  color: #00a88e;
+  font-weight: bold;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service-item {
+  background: #eef6f7;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #007e8a;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+}
+.solutions {
+  padding: 50px 20px;
+  background: #e6f7fb;
+  text-align: center;
+}
+
+.solutions h2 {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  color: #007e8a;
+}
+
+.solutions h2 strong {
+  color: #000;
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.solution-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+}
+
+.solution-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.solution-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.solution-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+img{
+  height: 400px;
+  width: 100%;
+}
+#text_center{
+  text-align: center;
+}
+#youtube:hover{
+  cursor: grab;
+
+  
+}
+
+ #last.html{
+     width: 100%;
+     height: 1700px;
+     border: none;
+  overflow: hidden;   
+  scrollbar-width: none;
+    }
+    #last.html:-webkit-scrollbar {
+  display: none;   
+  overflow: hidden; 
+}
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  background-color:rgb(235, 248, 255);
+}
+
+.card {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.card button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #1a242f;
+}
+
+.card.ecod {
+  background: linear-gradient(to bottom right, #00c9a7, #00c9a7cc);
+}
+
+.card.ad {
+  background: linear-gradient(to bottom right, #ff6600, #ff9900cc);
+}
+
+.card.flip {
+  background: linear-gradient(to bottom right, #3b82f6, #6366f1cc);
+}
+
+.card button {
+  margin-top: 10px;
+}
+#section-one{
+  margin: -15%;
+  
+}
+/* ========== Media Queries for Responsiveness ========== */
+
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .bottom_image {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    padding: 5px;
+  }
+
+  #bottom_image {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  #above_footer {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_one {
+    margin: 5px 0;
+  }
+
+  .bottom_image {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-column h4 {
+    font-size: 14px;
+  }
+
+  .footer-column ul li {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .bottom_image {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+  }
+
+  #bottom_image {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #above_footer {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .footer_one {
+    font-size: 13px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Empowering Businesses, Enabling Better India Through IT</h1>
+    <div class="stats-grid">
+      <div class="stat-card">
+        
+        <h2>20 <span>Billion+</span></h2>
+        <p>Invoices Processed Per Year</p>
+      </div>
+      <div class="stat-card">
+        <h2>100 <span>Billion$</span></h2>
+        <p>Transactions Processed Per Year</p>
+      </div>
+      <div class="stat-card">
+        <h2>50% <span>Pharma & FMCG</span></h2>
+        <p>Runs On Marg ERP Software</p>
+      </div>
+      <div class="stat-card">
+        <h2>1 <span>Million+</span></h2>
+        <p>Businesses Served Worldwide</p>
+      </div>
+      <div class="stat-card">
+        <h2>850+</h2>
+        <p>Sales & Support Centers</p>
+      </div>
+      <div class="stat-card">
+        <h2>8500+</h2>
+        <p>Sales & Service Professionals</p>
+      </div>
+    </div>
+  </section>
+  <section id="imagee">
+    <div id="imagee1">
+     <a href=""> <img src="1.png" alt="">
+      </a>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Drive your <span>business</span> with <span class="highlight">Marg ERP</span></h2>
+    <div class="icon-grid">
+      <div class="service-item">Retail Softwares</div>
+      <div class="service-item">Distribution Softwares</div>
+      <div class="service-item">Manufacturing Softwares</div>
+      <div class="service-item">ERP Corporate Solutions</div>
+      <div class="service-item">Payroll Software</div>
+      <div class="service-item">SFA Sale Force Automation</div>
+      <div class="service-item">DMSXpert Multi-location Business</div>
+      <div class="service-item">MargPay</div>
+    </div>
+  </section>
+<section class="solutions">
+  <h2><span>Find Better Solutions</span> <strong>Build Better Products</strong></h2>
+  <div class="solution-grid">
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/2965/2965567.png" alt="GST Billing" />
+      <h3>GST Billing & Return Filing</h3>
+      <p>Create GST invoices, multiple e-way bills & directly upload files in Excel, JSON or CSV format in GST portal and file GST returns</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/3850/3850449.png" alt="Easy Accounting" />
+      <h3>Easy Accounting</h3>
+      <p>Manage finances effortlessly with Marg Pharmacy Software. From billing to balance sheet, track expenses, stay audit-ready, and stay organized.</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/2601/2601296.png" alt="Inventory" />
+      <h3>Inventory Management</h3>
+      <p>Manage Focused, Dump and Near-Expiry stock level, set reorder points to replenish stock with Push Sale features</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/1384/1384021.png" alt="WhatsApp" />
+      <h3>Send Invoices on WhatsApp</h3>
+      <p>Send invoices directly to your customers on WhatsApp. Boost and streamline your business operations with Marg ERP.</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/1046/1046784.png" alt="e-Invoicing" />
+      <h3>e-Invoicing</h3>
+      <p>Get 15 paisa per auto e-Invoicing and easily generate error-free e-Invoices without going to the portal with zero downtime using Marg ERP</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/833/833318.png" alt="Payment" />
+      <h3>Payment & Reconciliation</h3>
+      <p>Simplify your payments & bill-by-bill reconciliation using Marg Pay at 0% service charges & 2% cashback for retailers</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/1828/1828911.png" alt="Barcode" />
+      <h3>Barcode Management</h3>
+      <p>Helps encode & centralize all products in a barcode to quickly & accurately track products during billing</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/2991/2991107.png" alt="Online Purchase" />
+      <h3>Online Purchase Import</h3>
+      <p>Import purchases directly through PDF, Excel, or CSV, eliminating manual work and ensuring 100% accuracy.</p>
+    </div>
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/685/685887.png" alt="Direct Calling">
+      <h3>Direct Calling</h3>
+      <p>To simplify the order taking process, connect your mobile with system by scanning QR code & place calls directly to customer for receiving orders</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/2972/2972719.png" alt="Shop QR">
+      <h3>My Shop QR Code</h3>
+      <p>List & upload products, schemes, offers in QR code. Print & paste outside shop/counter where customers can directly scan & place orders</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/7475/7475795.png" alt="eRetail">
+      <h3>eRetail Web Application</h3>
+      <p>Directly place online orders to distributors & check status of all orders, View nearby distributors, schemes inside Marg ERP</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/8114/8114602.png" alt="Purchase Claim">
+      <h3>Purchase & Sale Claim</h3>
+      <p>Get timely reminders & keep a track of benefits of claim against the purchases which is being done with Claims & Statements feature</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/4206/4206320.png" alt="Credit Limit">
+      <h3>Live Credit Limit Management</h3>
+      <p>Set & Track the credit limit for customers to save huge losses. Get live notification during billing whenever limit is reached</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/1076/1076984.png" alt="MargMart">
+      <h3>MargMart</h3>
+      <p>Get your E-commerce website ready in just 15 minutes with no technical knowledge required. Save your time & effort.</p>
+    </div>
+
+    <div class="solution-card">
+      <img src="https://cdn-icons-png.flaticon.com/128/607/607546.png" alt="ERP to ERP">
+      <h3>ERP-to-ERP Order</h3>
+      <p>Directly place Online Orders from your ERP Software to the distributors ERP Software. Compare & grab the best deals with ease.</p>
+    </div>
+  </div>
+</section>
+<section >
+  <div >
+  <p >
+    <h3 id="text_center">Why Marg ERP is Best for your Business</h3>
+  </p>
+  <p style="padding: 0px 250px 0px 250px; text-align: center;">Marg ERP has you covered end-to-end, from billing and inventory to GST, e-invoicing, and beyond. With innovative features that are easy to understand and apply, it is the perfect solution for every type of business. Watch our product videos to see how Marg simplifies operations, drives profitability, and takes your business to new heights. One platform. Endless possibilities. Real growth.
+
+</p>
+<div id="youtube">
+ 
+   <div class="video-container">
+    <p style=" font-size: 100px; float: left; margin-left: 200px; " onclick="prevVideo()"> &lt; </p>
+    <iframe id="youtubePlayer" src="https://www.youtube.com/embed/o1aLrWYi3Q8?si=kqN3ZHrzhwGh4DYt" style="margin-left: 12%; width: 600px; height:400px;" allowfullscreen></iframe>
+    
+      <p style=" font-size: 100px; float: right; margin-right: 250px;" onclick="nextVideo()">&gt;</p>
+
+    <div class="nav-buttons" >
+      
+    </div>
+  </div>
+</p>
+    </div>
+    </div>
+</section>
+
+<section>
+  <div>
+    <h2 style="text-align: center;">Grow your Pharma Business 3X Faster with ECOD Secure</h2>
+    <p style="text-align: center; padding: 0px 270px 100px 270px;">
+      Stepping up in the world of data & technology, Marg ERP Ltd has launched ECOD Securethe first data management platform for ease of data visibility amongst manufacturers & distributors in India.
+    </p>
+    <p style="text-align: center; margin: -80px; ;">ECOD Secure thrives as the first Indian product to offer three unique solutions</p>
+      
+     <section class="cards-section">
+  <div class="card ecod">
+    <h2>Each Company Own Data (ECOD)</h2>
+    <img src="https://margcompusoft.com/images/latest_highlights_ECOD.png" alt="ECOD" />
+    <p>Easy & simple way to get your Secondary Sales Data</p>
+    <button>Read More..</button>
+  </div>
+
+  <div class="card ad">
+    <h2>Advertisement on Marg</h2>
+    <img src="https://margcompusoft.com/images/home_page_ecoD-02.png" alt="Advertisement" />
+    <p>Advertise to India's top 1.75 Lakh+ Retailers & 80K+ Distributors on Marg ERP Screen</p>
+    <button>Read More..</button>
+  </div>
+
+  <div class="card flip">
+    <h2>Digital Salesman (Flip)</h2>
+    <img src="https://margcompusoft.com/images/home_page_ecoD-03.png" alt="Flip" />
+    <p>Knock out the competition by substituting your products</p>
+    <button>Read More..</button>
+  </div>
+</section>
+
+    <div>
+      <button></button>
+      <img src="https://margcompusoft.com/images/sun-shadow-right.png" alt="">
+    </div>
+    <section id="section-one">
+    <h3 style="text-align: center;">Take your business to the next level with Marg ERP® ECOD Secure</h3>
+    
+  </div>
+</section>
+<section>
+  <div>
+    <h2 style="text-align: center;">
+      Marg® ERP Integrated Mobile Apps
+    </h2>
+    <a href="">
+    <img src="2.png" alt="" style="height: 120px; width: 900px; margin-left: 290px; ";>
+      </a>
+  </div>
+</section>
+<section style="background-color:whitesmoke; padding-bottom: 30px;">
+  <div>
+    <h1 style="text-align: center; font-size: 40px;">Marg ERP Banking Integrations</h1>
+
+    <div class="solution-grid">
+
+    <div class="solution-card">
+      <h1>
+        Marg ICICI Bank Integration
+      </h1>
+      <img src=https://margcompusoft.com/image/banking-logo/bank1.jpg alt="GST Billing"  height="40px" width="40px"/>
+      
+    </div>
+        <div class="solution-card">
+              <h1>
+        Marg ICICI Bank Integration
+      </h1>
+      
+      <img src=https://margcompusoft.com/image/banking-logo/bank2.jpg alt="GST Billing" />
+      
+    </div>
+    
+          <div class="solution-card">
+            <h1>
+                    <h1>
+        Marg SBI Bank Integration
+      </h1>
+            </h1>
+      <img src=https://margcompusoft.com/image/banking-logo/bank4.jpg alt="GST Billing" />
+     
+    </div>
+    
+         <div class="solution-card">
+                <h1>
+        Marg J&K Bank Integration
+      </h1>
+      <img src=https://margcompusoft.com/image/banking-logo/bank3.jpg alt="GST Billing" />
+     
+    </div>
+    
+     
+
+  </div>
+</section>
+</section>
+<section><div>
+  <h1 style="color: aqua; text-align: center;">
+    Awarded By
+  </h1>
+  <div style="padding-left:10% ; padding-right: 10%;">
+  <marquee behavior="" direction="" style="padding-left: 10%;padding-right: 10%; ">
+    <img src="3.png" alt="" style=height:200px>
+    <img src="4.png" alt="" style="height: 200px;">
+    </div>
+  </marquee>
+  </div>
+</section>
+
+<iframe src="last.html"  width="100%" height="515px"></iframe>
+<script>
+let nextt=document.getElementById("previous");
+let prevv=document.getElementById("nextt");
+ const videos = [
+      "o1aLrWYi3Q8?si=kqN3ZHrzhwGh4DYt", 
+      "KnEYHxljsW4?si=-Pa8S5SKEQDnCVLE", 
+      "LSe2obwAwKk?si=pAZuaF5Z1nIshLb7"  
+    ];
+
+    let currentVideo = 0;
+
+    function loadVideo(index) {
+      const player = document.getElementById("youtubePlayer");
+      player.src = "https://www.youtube.com/embed/" + videos[index];
+    }
+
+    function prevVideo() {
+      currentVideo = (currentVideo - 1 + videos.length) % videos.length;
+      loadVideo(currentVideo);
+    }
+
+    function nextVideo() {
+      currentVideo = (currentVideo + 1) % videos.length;
+      loadVideo(currentVideo);
+    }
+    
+  document.querySelectorAll(".card button").forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      switch(index) {
+        case 0:
+          window.location.href = "your-ecod-link.html";
+          break;
+        case 1:
+          window.location.href = "your-advertisement-link.html";
+          break;
+        case 2:
+          window.location.href = "your-flip-link.html";
+          break;
+      }
+    });
+  });
+
+
+
+</script>
+</body>
+</html>
